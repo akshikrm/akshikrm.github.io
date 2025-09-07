@@ -9,7 +9,7 @@ import (
 
 func main() {
 	// Example for a single page
-	f, err := os.Create("public/index.html")
+	f, err := os.Create("docs/index.html")
 	if err != nil {
 		panic(err)
 	}
@@ -21,5 +21,5 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println("Generated public/index.html")
+	fmt.Println("Generated docs/index.html")
 }
