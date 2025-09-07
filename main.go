@@ -1,10 +1,11 @@
 package main
 
 import (
-	"akshikrm.github.io/pkg/templates"
 	"context"
 	"fmt"
 	"os"
+
+	"akshikrm.github.io/pkg/templates"
 )
 
 func main() {
@@ -16,7 +17,7 @@ func main() {
 	defer f.Close()
 
 	// Replace 'templates.HomePage()' with your template function
-	err = template.HomePage().Render(context.Background(), f)
+	err = templates.Home().Render(context.Background(), f)
 	if err != nil {
 		panic(err)
 	}
